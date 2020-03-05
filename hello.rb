@@ -23,3 +23,37 @@ def sample2(x)
 end
 sample2(4)
 sample2(10)
+
+n=3
+
+if  n==3
+  p "nは３です"
+end
+
+if n==3 || n==4
+  p "３、４のどちらかです"
+end
+
+if n==3
+  p "nは３です"
+elsif n==4
+ p "nは４です"
+end
+
+hellos=["こんにちは","こんにちは","こんにちは","こんにちは","こんにちは"]
+for hello in hellos do
+  p hello
+end 
+
+[1,2,3,4,5].each do |hello|
+  p hello
+end
+
+num=3
+if num==2
+  p "２です"
+elsif num==3
+  p "３です"
+else
+  p "それ以外です"
+end
