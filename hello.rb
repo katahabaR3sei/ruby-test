@@ -57,3 +57,45 @@ elsif num==3
 else
   p "それ以外です"
 end
+
+class Human
+  def initialize(name)
+    @name = name
+  end
+  def put_name
+    p @name
+  end
+end
+
+human1=Human.new("林")
+human2=Human.new("山口")
+human1.put_name
+human2.put_name
+
+
+class People
+  attr_accessor :name
+  def initialize
+    p "Peopleのインスタンスが作られました。"
+  end
+  def self.greet
+    p "私はPeopleクラスです。"
+  end
+  
+end
+
+People.new
+
+People.greet
+
+people=People.new
+people.name="祐太朗"
+p people.name
+
+class ChildPeople < People
+  def self.greet
+    p "私は目からビームが出せます。"
+  end
+end
+
+ChildPeople.greet
