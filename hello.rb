@@ -19,7 +19,7 @@ sample1("like")
 sample1("yhee")
 
 def sample2(x)
-  p x.next
+  p x+1  #"修正箇所"
 end
 sample2(4)
 sample2(10)
@@ -99,3 +99,9 @@ class ChildPeople < People
 end
 
 ChildPeople.greet
+
+def sample2(x)
+  p x+1  #"修正箇所"
+end
+sample2(4)
+sample2(10)
