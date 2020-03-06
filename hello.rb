@@ -105,3 +105,7 @@ def sample2(x)
 end
 sample2(4)
 sample2(10)
+
+for hello in 1..5 do  #修正箇所
+  p "こんにちは"
+end
